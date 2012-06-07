@@ -13,7 +13,7 @@ jQuery(function($) {
 
       // Make the context correct by replacing new_<parents> with the generated ID
       // of each of the parent objects
-      var context = ($(link).closest('.fields').closestChild('input:first').attr('name') || '').replace(new RegExp('\[[a-z]+\]$'), '');
+      var context = ($(link).closest('.fields').closestChild('input:first-of-type').attr('name') || '').replace(new RegExp('\[[a-z]+\]$'), '');
 
 
       // context will be something like this for a brand new form:
